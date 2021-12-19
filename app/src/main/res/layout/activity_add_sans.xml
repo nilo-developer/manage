@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B2EBF2"
+    tools:context=".activity.AddSansActivity">
+
+
+    <include layout="@layout/activity_main"/>
+
+    <!--    <com.vivekkaushik.datepicker.DatePickerTimeline-->
+    <!--        android:id="@+id/datePickerTimeline"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="200dp"-->
+    <!--        android:layout_marginTop="40dp"-->
+    <!--        android:padding="5dp"-->
+    <!--        android:layout_marginBottom="17dp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        tools:ignore="MissingConstraints" />-->
+
+
+    <com.sanojpunchihewa.glowbutton.GlowButton
+        android:id="@+id/Button_main_date"
+        style="@style/myfont"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="224dp"
+        android:padding="30dp"
+        android:text="تنظیم تاریخ"
+        android:textColor="#0B0A0A"
+        android:textSize="12sp"
+        app:buttonColor="#B2EBF2"
+        app:cornerRadius="50dp"
+        app:glowColor="#FB8C00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:pressedGlowSize="25dp"
+        app:unpressedGlowSize="20dp"
+        tools:ignore="MissingConstraints" />
+
+    <com.sanojpunchihewa.glowbutton.GlowButton
+        android:id="@+id/Button_main_time"
+        style="@style/myfont"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:padding="30dp"
+        android:text="تنظیم ساعت "
+        android:textColor="#0B0A0A"
+        android:textSize="12sp"
+        app:buttonColor="#B2EBF2"
+        app:cornerRadius="50dp"
+        app:glowColor="#FB8C00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Button_main_date"
+        app:pressedGlowSize="25dp"
+        app:unpressedGlowSize="20dp"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

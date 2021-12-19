@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/AppTheme"
+    tools:context=".activity.AddressActivity">
+
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/activity_main"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+
+    <!--    <Button-->
+    <!--        android:id="@+id/button_add_address"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginBottom="56dp"-->
+    <!--        android:text="افزودن آدرس"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/include"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/recyclerView"-->
+    <!--        app:layout_constraintVertical_bias="0.768"-->
+    <!--        tools:ignore="MissingConstraints" />-->
+
+    <com.sanojpunchihewa.glowbutton.GlowButton
+        android:id="@+id/button_add_address"
+        style="@style/myfont"
+        android:layout_width="150dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="52dp"
+        android:text="ثبت"
+        android:textColor="@color/black"
+        app:buttonColor="#B2EBF2"
+        app:cornerRadius="40dp"
+        app:glowColor="#F57C00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView"
+        app:layout_constraintVertical_bias="0.085"
+        app:pressedGlowSize="25dp"
+        app:unpressedGlowSize="20dp"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="58dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/include" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

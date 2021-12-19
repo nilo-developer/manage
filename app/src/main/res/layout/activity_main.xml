@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#FB8C00">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal"
+            tools:ignore="RtlHardcoded,UseCompoundDrawables">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="مدیریت سمینار"
+                android:textColor="#0E0E0E"
+                android:textSize="28sp"
+                tools:ignore="HardcodedText" />
+
+            <ImageView
+                android:id="@+id/img_drawer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_menu_24"
+                tools:ignore="ContentDescription" />
+
+<!--            <com.airbnb.lottie.LottieAnimationView-->
+<!--                android:id="@+id/animationView"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:lottie_rawRes="@raw/menu"-->
+<!--                app:lottie_autoPlay="true"-->
+<!--                app:lottie_loop="true"/>-->
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+</LinearLayout>
